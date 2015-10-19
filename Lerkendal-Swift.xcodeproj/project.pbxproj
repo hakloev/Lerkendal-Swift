@@ -1,0 +1,787 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		074F90F31BD57D0800498228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F90F21BD57D0800498228 /* AppDelegate.swift */; };
+		074F90F51BD57D0800498228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F90F41BD57D0800498228 /* ViewController.swift */; };
+		074F90F81BD57D0800498228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074F90F61BD57D0800498228 /* Main.storyboard */; };
+		074F90FA1BD57D0800498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F90F91BD57D0800498228 /* Assets.xcassets */; };
+		074F90FD1BD57D0800498228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074F90FB1BD57D0800498228 /* LaunchScreen.storyboard */; };
+		074F91081BD57D0800498228 /* Lerkendal_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91071BD57D0800498228 /* Lerkendal_SwiftTests.swift */; };
+		074F91131BD57D0800498228 /* Lerkendal_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91121BD57D0800498228 /* Lerkendal_SwiftUITests.swift */; };
+		074F91261BD57E9900498228 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074F91241BD57E9900498228 /* Interface.storyboard */; };
+		074F91281BD57E9900498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F91271BD57E9900498228 /* Assets.xcassets */; };
+		074F912F1BD57E9900498228 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 074F912E1BD57E9900498228 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		074F91341BD57E9900498228 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91331BD57E9900498228 /* InterfaceController.swift */; };
+		074F91361BD57E9900498228 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91351BD57E9900498228 /* ExtensionDelegate.swift */; };
+		074F91381BD57E9900498228 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91371BD57E9900498228 /* ComplicationController.swift */; };
+		074F913A1BD57E9900498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F91391BD57E9900498228 /* Assets.xcassets */; };
+		074F913E1BD57E9900498228 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 074F91221BD57E9900498228 /* Watch.app */; };
+		074F914C1BD58CF000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F914B1BD58CF000498228 /* BusService.swift */; settings = {ASSET_TAGS = (); }; };
+		074F914D1BD58CF000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F914B1BD58CF000498228 /* BusService.swift */; settings = {ASSET_TAGS = (); }; };
+		074F914F1BD58D8200498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F914E1BD58D8200498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
+		074F91501BD58D8200498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F914E1BD58D8200498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		074F91041BD57D0800498228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074F90E71BD57D0700498228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F90EE1BD57D0800498228;
+			remoteInfo = "Lerkendal-Swift";
+		};
+		074F910F1BD57D0800498228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074F90E71BD57D0700498228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F90EE1BD57D0800498228;
+			remoteInfo = "Lerkendal-Swift";
+		};
+		074F91301BD57E9900498228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074F90E71BD57D0700498228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F912D1BD57E9900498228;
+			remoteInfo = "Watch Extension";
+		};
+		074F913C1BD57E9900498228 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 074F90E71BD57D0700498228 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 074F91211BD57E9900498228;
+			remoteInfo = Watch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		074F91421BD57E9900498228 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				074F912F1BD57E9900498228 /* Watch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F91461BD57E9900498228 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				074F913E1BD57E9900498228 /* Watch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		074F90EF1BD57D0800498228 /* Lerkendal-Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lerkendal-Swift.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074F90F21BD57D0800498228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		074F90F41BD57D0800498228 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		074F90F71BD57D0800498228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		074F90F91BD57D0800498228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074F90FC1BD57D0800498228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		074F90FE1BD57D0800498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074F91031BD57D0800498228 /* Lerkendal-SwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lerkendal-SwiftTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074F91071BD57D0800498228 /* Lerkendal_SwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lerkendal_SwiftTests.swift; sourceTree = "<group>"; };
+		074F91091BD57D0800498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074F910E1BD57D0800498228 /* Lerkendal-SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lerkendal-SwiftUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074F91121BD57D0800498228 /* Lerkendal_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lerkendal_SwiftUITests.swift; sourceTree = "<group>"; };
+		074F91141BD57D0800498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074F91221BD57E9900498228 /* Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		074F91251BD57E9900498228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		074F91271BD57E9900498228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074F91291BD57E9900498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074F912E1BD57E9900498228 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		074F91331BD57E9900498228 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		074F91351BD57E9900498228 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		074F91371BD57E9900498228 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		074F91391BD57E9900498228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		074F913B1BD57E9900498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		074F914B1BD58CF000498228 /* BusService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusService.swift; sourceTree = "<group>"; };
+		074F914E1BD58D8200498228 /* WasherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasherService.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		074F90EC1BD57D0800498228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F91001BD57D0800498228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F910B1BD57D0800498228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F912B1BD57E9900498228 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		074F90E61BD57D0700498228 = {
+			isa = PBXGroup;
+			children = (
+				074F91471BD580AC00498228 /* Shared */,
+				074F90F11BD57D0800498228 /* Lerkendal-Swift */,
+				074F91061BD57D0800498228 /* Lerkendal-SwiftTests */,
+				074F91111BD57D0800498228 /* Lerkendal-SwiftUITests */,
+				074F91231BD57E9900498228 /* Watch */,
+				074F91321BD57E9900498228 /* Watch Extension */,
+				074F90F01BD57D0800498228 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		074F90F01BD57D0800498228 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				074F90EF1BD57D0800498228 /* Lerkendal-Swift.app */,
+				074F91031BD57D0800498228 /* Lerkendal-SwiftTests.xctest */,
+				074F910E1BD57D0800498228 /* Lerkendal-SwiftUITests.xctest */,
+				074F91221BD57E9900498228 /* Watch.app */,
+				074F912E1BD57E9900498228 /* Watch Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		074F90F11BD57D0800498228 /* Lerkendal-Swift */ = {
+			isa = PBXGroup;
+			children = (
+				074F90F21BD57D0800498228 /* AppDelegate.swift */,
+				074F90F41BD57D0800498228 /* ViewController.swift */,
+				074F90F61BD57D0800498228 /* Main.storyboard */,
+				074F90F91BD57D0800498228 /* Assets.xcassets */,
+				074F90FB1BD57D0800498228 /* LaunchScreen.storyboard */,
+				074F90FE1BD57D0800498228 /* Info.plist */,
+			);
+			path = "Lerkendal-Swift";
+			sourceTree = "<group>";
+		};
+		074F91061BD57D0800498228 /* Lerkendal-SwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				074F91071BD57D0800498228 /* Lerkendal_SwiftTests.swift */,
+				074F91091BD57D0800498228 /* Info.plist */,
+			);
+			path = "Lerkendal-SwiftTests";
+			sourceTree = "<group>";
+		};
+		074F91111BD57D0800498228 /* Lerkendal-SwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				074F91121BD57D0800498228 /* Lerkendal_SwiftUITests.swift */,
+				074F91141BD57D0800498228 /* Info.plist */,
+			);
+			path = "Lerkendal-SwiftUITests";
+			sourceTree = "<group>";
+		};
+		074F91231BD57E9900498228 /* Watch */ = {
+			isa = PBXGroup;
+			children = (
+				074F91241BD57E9900498228 /* Interface.storyboard */,
+				074F91271BD57E9900498228 /* Assets.xcassets */,
+				074F91291BD57E9900498228 /* Info.plist */,
+			);
+			path = Watch;
+			sourceTree = "<group>";
+		};
+		074F91321BD57E9900498228 /* Watch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				074F91331BD57E9900498228 /* InterfaceController.swift */,
+				074F91351BD57E9900498228 /* ExtensionDelegate.swift */,
+				074F91371BD57E9900498228 /* ComplicationController.swift */,
+				074F91391BD57E9900498228 /* Assets.xcassets */,
+				074F913B1BD57E9900498228 /* Info.plist */,
+			);
+			path = "Watch Extension";
+			sourceTree = "<group>";
+		};
+		074F91471BD580AC00498228 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				074F914B1BD58CF000498228 /* BusService.swift */,
+				074F914E1BD58D8200498228 /* WasherService.swift */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		074F90EE1BD57D0800498228 /* Lerkendal-Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074F91171BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-Swift" */;
+			buildPhases = (
+				074F90EB1BD57D0800498228 /* Sources */,
+				074F90EC1BD57D0800498228 /* Frameworks */,
+				074F90ED1BD57D0800498228 /* Resources */,
+				074F91461BD57E9900498228 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074F913D1BD57E9900498228 /* PBXTargetDependency */,
+			);
+			name = "Lerkendal-Swift";
+			productName = "Lerkendal-Swift";
+			productReference = 074F90EF1BD57D0800498228 /* Lerkendal-Swift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		074F91021BD57D0800498228 /* Lerkendal-SwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074F911A1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftTests" */;
+			buildPhases = (
+				074F90FF1BD57D0800498228 /* Sources */,
+				074F91001BD57D0800498228 /* Frameworks */,
+				074F91011BD57D0800498228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074F91051BD57D0800498228 /* PBXTargetDependency */,
+			);
+			name = "Lerkendal-SwiftTests";
+			productName = "Lerkendal-SwiftTests";
+			productReference = 074F91031BD57D0800498228 /* Lerkendal-SwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		074F910D1BD57D0800498228 /* Lerkendal-SwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074F911D1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftUITests" */;
+			buildPhases = (
+				074F910A1BD57D0800498228 /* Sources */,
+				074F910B1BD57D0800498228 /* Frameworks */,
+				074F910C1BD57D0800498228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074F91101BD57D0800498228 /* PBXTargetDependency */,
+			);
+			name = "Lerkendal-SwiftUITests";
+			productName = "Lerkendal-SwiftUITests";
+			productReference = 074F910E1BD57D0800498228 /* Lerkendal-SwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		074F91211BD57E9900498228 /* Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074F91431BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch" */;
+			buildPhases = (
+				074F91201BD57E9900498228 /* Resources */,
+				074F91421BD57E9900498228 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				074F91311BD57E9900498228 /* PBXTargetDependency */,
+			);
+			name = Watch;
+			productName = Watch;
+			productReference = 074F91221BD57E9900498228 /* Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		074F912D1BD57E9900498228 /* Watch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 074F913F1BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch Extension" */;
+			buildPhases = (
+				074F912A1BD57E9900498228 /* Sources */,
+				074F912B1BD57E9900498228 /* Frameworks */,
+				074F912C1BD57E9900498228 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Watch Extension";
+			productName = "Watch Extension";
+			productReference = 074F912E1BD57E9900498228 /* Watch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		074F90E71BD57D0700498228 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "Håkon Løvdal";
+				TargetAttributes = {
+					074F90EE1BD57D0800498228 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 83M6ZS282T;
+					};
+					074F91021BD57D0800498228 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 074F90EE1BD57D0800498228;
+					};
+					074F910D1BD57D0800498228 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 074F90EE1BD57D0800498228;
+					};
+					074F91211BD57E9900498228 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 83M6ZS282T;
+					};
+					074F912D1BD57E9900498228 = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 074F90EA1BD57D0700498228 /* Build configuration list for PBXProject "Lerkendal-Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 074F90E61BD57D0700498228;
+			productRefGroup = 074F90F01BD57D0800498228 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				074F90EE1BD57D0800498228 /* Lerkendal-Swift */,
+				074F91021BD57D0800498228 /* Lerkendal-SwiftTests */,
+				074F910D1BD57D0800498228 /* Lerkendal-SwiftUITests */,
+				074F91211BD57E9900498228 /* Watch */,
+				074F912D1BD57E9900498228 /* Watch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		074F90ED1BD57D0800498228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F90FD1BD57D0800498228 /* LaunchScreen.storyboard in Resources */,
+				074F90FA1BD57D0800498228 /* Assets.xcassets in Resources */,
+				074F90F81BD57D0800498228 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F91011BD57D0800498228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F910C1BD57D0800498228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F91201BD57E9900498228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F91281BD57E9900498228 /* Assets.xcassets in Resources */,
+				074F91261BD57E9900498228 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F912C1BD57E9900498228 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F913A1BD57E9900498228 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		074F90EB1BD57D0800498228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F90F51BD57D0800498228 /* ViewController.swift in Sources */,
+				074F914F1BD58D8200498228 /* WasherService.swift in Sources */,
+				074F914C1BD58CF000498228 /* BusService.swift in Sources */,
+				074F90F31BD57D0800498228 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F90FF1BD57D0800498228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F91081BD57D0800498228 /* Lerkendal_SwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F910A1BD57D0800498228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F91131BD57D0800498228 /* Lerkendal_SwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		074F912A1BD57E9900498228 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				074F91361BD57E9900498228 /* ExtensionDelegate.swift in Sources */,
+				074F91341BD57E9900498228 /* InterfaceController.swift in Sources */,
+				074F914D1BD58CF000498228 /* BusService.swift in Sources */,
+				074F91381BD57E9900498228 /* ComplicationController.swift in Sources */,
+				074F91501BD58D8200498228 /* WasherService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		074F91051BD57D0800498228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074F90EE1BD57D0800498228 /* Lerkendal-Swift */;
+			targetProxy = 074F91041BD57D0800498228 /* PBXContainerItemProxy */;
+		};
+		074F91101BD57D0800498228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074F90EE1BD57D0800498228 /* Lerkendal-Swift */;
+			targetProxy = 074F910F1BD57D0800498228 /* PBXContainerItemProxy */;
+		};
+		074F91311BD57E9900498228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074F912D1BD57E9900498228 /* Watch Extension */;
+			targetProxy = 074F91301BD57E9900498228 /* PBXContainerItemProxy */;
+		};
+		074F913D1BD57E9900498228 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 074F91211BD57E9900498228 /* Watch */;
+			targetProxy = 074F913C1BD57E9900498228 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		074F90F61BD57D0800498228 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074F90F71BD57D0800498228 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		074F90FB1BD57D0800498228 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074F90FC1BD57D0800498228 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		074F91241BD57E9900498228 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				074F91251BD57E9900498228 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		074F91151BD57D0800498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		074F91161BD57D0800498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		074F91181BD57D0800498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Lerkendal-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		074F91191BD57D0800498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Lerkendal-Swift/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		074F911B1BD57D0800498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Lerkendal-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lerkendal-Swift.app/Lerkendal-Swift";
+			};
+			name = Debug;
+		};
+		074F911C1BD57D0800498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Lerkendal-SwiftTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-SwiftTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lerkendal-Swift.app/Lerkendal-Swift";
+			};
+			name = Release;
+		};
+		074F911E1BD57D0800498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Lerkendal-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Lerkendal-Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		074F911F1BD57D0800498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Lerkendal-SwiftUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-SwiftUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Lerkendal-Swift";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		074F91401BD57E9900498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		074F91411BD57E9900498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				INFOPLIST_FILE = "Watch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+		074F91441BD57E9900498228 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Debug;
+		};
+		074F91451BD57E9900498228 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Watch_Extension;
+				INFOPLIST_FILE = Watch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		074F90EA1BD57D0700498228 /* Build configuration list for PBXProject "Lerkendal-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F91151BD57D0800498228 /* Debug */,
+				074F91161BD57D0800498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		074F91171BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F91181BD57D0800498228 /* Debug */,
+				074F91191BD57D0800498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		074F911A1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F911B1BD57D0800498228 /* Debug */,
+				074F911C1BD57D0800498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		074F911D1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F911E1BD57D0800498228 /* Debug */,
+				074F911F1BD57D0800498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		074F913F1BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F91401BD57E9900498228 /* Debug */,
+				074F91411BD57E9900498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		074F91431BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				074F91441BD57E9900498228 /* Debug */,
+				074F91451BD57E9900498228 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 074F90E71BD57D0700498228 /* Project object */;
+}
