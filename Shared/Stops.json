@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Lerkendal Stadion",
+		"locationId": "16011264"
+	},
+	{
+		"name": "Lerkendal Stadion",
+		"locationId": "16010264"
+	},
+	{
+		"name": "Tempe Kirke",
+		"locationId": "16010649"
+	},
+    {
+        "name": "Gløshaugen Nord",
+        "locationId": "16011333"
+    },
+    {
+        "name": "Gløshaugen Nord",
+        "locationId": "16010333"
+    },
+    {
+        "name": "Munkegata M2",
+        "locationId": "16010002"
+    },
+    {
+        "name": "Prinsen Kinosenter",
+        "locationId": "16011011"
+    },
+    {
+        "name": "Prinsen Kinosenter",
+        "locationId": "16010011"
+    }
+]

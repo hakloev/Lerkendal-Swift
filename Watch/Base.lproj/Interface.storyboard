@@ -1,15 +1,94 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lGv-9d-lF8">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
-        <scene sceneID="aou-V4-d1y">
+        <!--Stops-->
+        <scene sceneID="okF-IB-dkA">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watch" customModuleProvider="target"/>
+                <controller identifier="BusStops" title="Stops" id="lGv-9d-lF8" customClass="StopsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="CYE-7C-j5N">
+                            <items>
+                                <tableRow identifier="StopsRow" id="dMu-zD-axc" customClass="StopsRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="c6U-UE-RhA">
+                                        <items>
+                                            <label alignment="left" text="Lerkendal Stadion" textAlignment="left" id="CBB-QA-ZSz">
+                                                <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                            </label>
+                                            <label alignment="left" text="Til byen" id="fQr-R2-k5r">
+                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="stopDirectionLabel" destination="fQr-R2-k5r" id="ccg-z8-9M2"/>
+                                        <outlet property="stopNameLabel" destination="CBB-QA-ZSz" id="UKG-8C-1ow"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="stopsTable" destination="CYE-7C-j5N" id="8VL-JL-d8A"/>
+                    </connections>
+                </controller>
             </objects>
+            <point key="canvasLocation" x="-15" y="284"/>
+        </scene>
+        <!--StopDetails-->
+        <scene sceneID="hIq-dD-UyR">
+            <objects>
+                <controller identifier="StopDetails" id="6tL-5j-Dcu" customClass="StopDetailsInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <table alignment="left" id="wVA-Ww-B87">
+                            <items>
+                                <tableRow identifier="StopDetailsRow" selectable="NO" id="9Rg-nx-jVh" customClass="StopDetailsRowController" customModule="Watch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Bqu-v7-Aon">
+                                        <items>
+                                            <group alignment="left" id="Ofe-Ek-6zJ">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="5:" id="tiu-5l-25v">
+                                                        <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
+                                                    </label>
+                                                    <label alignment="left" verticalAlignment="center" text="Munkegata M1" id="tRp-JO-oXc">
+                                                        <fontDescription key="font" type="system" weight="thin" pointSize="14"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="left" id="VcV-e4-B7i">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="18:40" id="OEE-gb-lgY">
+                                                        <fontDescription key="font" type="boldSystem" pointSize="17"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="Realtime" id="xrq-BG-o3C">
+                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="departure" destination="OEE-gb-lgY" id="vHM-u4-AyU"/>
+                                        <outlet property="destination" destination="tRp-JO-oXc" id="Vpj-eS-XqF"/>
+                                        <outlet property="realTime" destination="xrq-BG-o3C" id="YEy-U7-4mF"/>
+                                        <outlet property="route" destination="tiu-5l-25v" id="d3x-Wi-5WX"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="stopDetailsTable" destination="wVA-Ww-B87" id="HXb-k7-gGM"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="181" y="562"/>
         </scene>
     </scenes>
+    <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

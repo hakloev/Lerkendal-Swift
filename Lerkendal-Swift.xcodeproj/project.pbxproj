@@ -17,7 +17,7 @@
 		074F91261BD57E9900498228 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 074F91241BD57E9900498228 /* Interface.storyboard */; };
 		074F91281BD57E9900498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F91271BD57E9900498228 /* Assets.xcassets */; };
 		074F912F1BD57E9900498228 /* Watch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 074F912E1BD57E9900498228 /* Watch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		074F91341BD57E9900498228 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91331BD57E9900498228 /* InterfaceController.swift */; };
+		074F91341BD57E9900498228 /* StopsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91331BD57E9900498228 /* StopsInterfaceController.swift */; };
 		074F91361BD57E9900498228 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91351BD57E9900498228 /* ExtensionDelegate.swift */; };
 		074F91381BD57E9900498228 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91371BD57E9900498228 /* ComplicationController.swift */; };
 		074F913A1BD57E9900498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F91391BD57E9900498228 /* Assets.xcassets */; };
@@ -26,6 +26,15 @@
 		074F91531BD595A000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91511BD595A000498228 /* BusService.swift */; settings = {ASSET_TAGS = (); }; };
 		074F91551BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
 		074F91561BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
+		07D24F681BD7EEFE0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; settings = {ASSET_TAGS = (); }; };
+		07D24F691BD7EF0A0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; settings = {ASSET_TAGS = (); }; };
+		07D24F6E1BD7F6270034920E /* StopsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6D1BD7F6270034920E /* StopsRowController.swift */; settings = {ASSET_TAGS = (); }; };
+		07D24F701BD7F9FB0034920E /* StopDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		07D24F721BD802DC0034920E /* StopDetailsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F711BD802DC0034920E /* StopDetailsRowController.swift */; settings = {ASSET_TAGS = (); }; };
+		07F618111BD81F18000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
+		07F618131BD81F22000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		07F618141BD81F2F000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; settings = {ASSET_TAGS = (); }; };
+		07F618151BD81F32000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,13 +112,19 @@
 		074F91271BD57E9900498228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074F91291BD57E9900498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074F912E1BD57E9900498228 /* Watch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		074F91331BD57E9900498228 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		074F91331BD57E9900498228 /* StopsInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopsInterfaceController.swift; sourceTree = "<group>"; };
 		074F91351BD57E9900498228 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		074F91371BD57E9900498228 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		074F91391BD57E9900498228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		074F913B1BD57E9900498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074F91511BD595A000498228 /* BusService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusService.swift; path = Shared/BusService.swift; sourceTree = "<group>"; };
 		074F91541BD595A900498228 /* WasherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WasherService.swift; path = Shared/WasherService.swift; sourceTree = "<group>"; };
+		07D24F671BD7EEFE0034920E /* Stops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Stops.json; path = Shared/Stops.json; sourceTree = "<group>"; };
+		07D24F6D1BD7F6270034920E /* StopsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsRowController.swift; sourceTree = "<group>"; };
+		07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopDetailsInterfaceController.swift; sourceTree = "<group>"; };
+		07D24F711BD802DC0034920E /* StopDetailsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopDetailsRowController.swift; sourceTree = "<group>"; };
+		07F618101BD81F18000E5583 /* Stop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Stop.swift; path = Shared/Stop.swift; sourceTree = "<group>"; };
+		07F618121BD81F22000E5583 /* StopDetails.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StopDetails.swift; path = Shared/StopDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -213,11 +228,14 @@
 		074F91321BD57E9900498228 /* Watch Extension */ = {
 			isa = PBXGroup;
 			children = (
-				074F91331BD57E9900498228 /* InterfaceController.swift */,
+				074F91331BD57E9900498228 /* StopsInterfaceController.swift */,
 				074F91351BD57E9900498228 /* ExtensionDelegate.swift */,
 				074F91371BD57E9900498228 /* ComplicationController.swift */,
 				074F91391BD57E9900498228 /* Assets.xcassets */,
 				074F913B1BD57E9900498228 /* Info.plist */,
+				07D24F6D1BD7F6270034920E /* StopsRowController.swift */,
+				07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */,
+				07D24F711BD802DC0034920E /* StopDetailsRowController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -225,6 +243,9 @@
 		074F91471BD580AC00498228 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				07F618121BD81F22000E5583 /* StopDetails.swift */,
+				07F618101BD81F18000E5583 /* Stop.swift */,
+				07D24F671BD7EEFE0034920E /* Stops.json */,
 				074F91511BD595A000498228 /* BusService.swift */,
 				074F91541BD595A900498228 /* WasherService.swift */,
 			);
@@ -350,6 +371,7 @@
 					};
 					074F912D1BD57E9900498228 = {
 						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = 83M6ZS282T;
 					};
 				};
 			};
@@ -383,6 +405,7 @@
 				074F90FD1BD57D0800498228 /* LaunchScreen.storyboard in Resources */,
 				074F90FA1BD57D0800498228 /* Assets.xcassets in Resources */,
 				074F90F81BD57D0800498228 /* Main.storyboard in Resources */,
+				07D24F681BD7EEFE0034920E /* Stops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +437,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				074F913A1BD57E9900498228 /* Assets.xcassets in Resources */,
+				07D24F691BD7EF0A0034920E /* Stops.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,7 +451,9 @@
 				074F90F51BD57D0800498228 /* ViewController.swift in Sources */,
 				074F91551BD595A900498228 /* WasherService.swift in Sources */,
 				074F91521BD595A000498228 /* BusService.swift in Sources */,
+				07F618131BD81F22000E5583 /* StopDetails.swift in Sources */,
 				074F90F31BD57D0800498228 /* AppDelegate.swift in Sources */,
+				07F618111BD81F18000E5583 /* Stop.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,10 +477,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				07D24F721BD802DC0034920E /* StopDetailsRowController.swift in Sources */,
 				074F91361BD57E9900498228 /* ExtensionDelegate.swift in Sources */,
-				074F91341BD57E9900498228 /* InterfaceController.swift in Sources */,
+				07F618141BD81F2F000E5583 /* StopDetails.swift in Sources */,
+				074F91341BD57E9900498228 /* StopsInterfaceController.swift in Sources */,
+				07D24F701BD7F9FB0034920E /* StopDetailsInterfaceController.swift in Sources */,
 				074F91561BD595A900498228 /* WasherService.swift in Sources */,
 				074F91381BD57E9900498228 /* ComplicationController.swift in Sources */,
+				07F618151BD81F32000E5583 /* Stop.swift in Sources */,
+				07D24F6E1BD7F6270034920E /* StopsRowController.swift in Sources */,
 				074F91531BD595A000498228 /* BusService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -669,10 +700,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -684,10 +718,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
 				INFOPLIST_FILE = "Watch Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "hakloev.Lerkendal-Swift.watchkitapp.watchkitextension";
 				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = 4;
@@ -748,6 +785,7 @@
 				074F91191BD57D0800498228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074F911A1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -756,6 +794,7 @@
 				074F911C1BD57D0800498228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074F911D1BD57D0800498228 /* Build configuration list for PBXNativeTarget "Lerkendal-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -764,6 +803,7 @@
 				074F911F1BD57D0800498228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074F913F1BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch Extension" */ = {
 			isa = XCConfigurationList;
@@ -772,6 +812,7 @@
 				074F91411BD57E9900498228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		074F91431BD57E9900498228 /* Build configuration list for PBXNativeTarget "Watch" */ = {
 			isa = XCConfigurationList;
@@ -780,6 +821,7 @@
 				074F91451BD57E9900498228 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

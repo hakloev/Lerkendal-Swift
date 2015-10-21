@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Lerkendal-Swift.xcodeproj">
+      location = "self:/Users/hakloev/git/Lerkendal-Swift/Lerkendal-Swift.xcodeproj">
    </FileRef>
 </Workspace>
