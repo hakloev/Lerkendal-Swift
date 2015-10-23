@@ -22,19 +22,20 @@
 		074F91381BD57E9900498228 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91371BD57E9900498228 /* ComplicationController.swift */; };
 		074F913A1BD57E9900498228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 074F91391BD57E9900498228 /* Assets.xcassets */; };
 		074F913E1BD57E9900498228 /* Watch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 074F91221BD57E9900498228 /* Watch.app */; };
-		074F91521BD595A000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91511BD595A000498228 /* BusService.swift */; settings = {ASSET_TAGS = (); }; };
-		074F91531BD595A000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91511BD595A000498228 /* BusService.swift */; settings = {ASSET_TAGS = (); }; };
-		074F91551BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
-		074F91561BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; settings = {ASSET_TAGS = (); }; };
-		07D24F681BD7EEFE0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; settings = {ASSET_TAGS = (); }; };
-		07D24F691BD7EF0A0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; settings = {ASSET_TAGS = (); }; };
-		07D24F6E1BD7F6270034920E /* StopsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6D1BD7F6270034920E /* StopsRowController.swift */; settings = {ASSET_TAGS = (); }; };
-		07D24F701BD7F9FB0034920E /* StopDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
-		07D24F721BD802DC0034920E /* StopDetailsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F711BD802DC0034920E /* StopDetailsRowController.swift */; settings = {ASSET_TAGS = (); }; };
-		07F618111BD81F18000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
-		07F618131BD81F22000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; settings = {ASSET_TAGS = (); }; };
-		07F618141BD81F2F000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; settings = {ASSET_TAGS = (); }; };
-		07F618151BD81F32000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; settings = {ASSET_TAGS = (); }; };
+		074F91521BD595A000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91511BD595A000498228 /* BusService.swift */; };
+		074F91531BD595A000498228 /* BusService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91511BD595A000498228 /* BusService.swift */; };
+		074F91551BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; };
+		074F91561BD595A900498228 /* WasherService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 074F91541BD595A900498228 /* WasherService.swift */; };
+		0754169A1BDACC5C00234807 /* WasheryInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 075416991BDACC5C00234807 /* WasheryInterfaceController.swift */; };
+		07D24F681BD7EEFE0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; };
+		07D24F691BD7EF0A0034920E /* Stops.json in Resources */ = {isa = PBXBuildFile; fileRef = 07D24F671BD7EEFE0034920E /* Stops.json */; };
+		07D24F6E1BD7F6270034920E /* StopsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6D1BD7F6270034920E /* StopsRowController.swift */; };
+		07D24F701BD7F9FB0034920E /* StopDetailsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */; };
+		07D24F721BD802DC0034920E /* StopDetailsRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07D24F711BD802DC0034920E /* StopDetailsRowController.swift */; };
+		07F618111BD81F18000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; };
+		07F618131BD81F22000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; };
+		07F618141BD81F2F000E5583 /* StopDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618121BD81F22000E5583 /* StopDetails.swift */; };
+		07F618151BD81F32000E5583 /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F618101BD81F18000E5583 /* Stop.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,7 @@
 		074F913B1BD57E9900498228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		074F91511BD595A000498228 /* BusService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusService.swift; path = Shared/BusService.swift; sourceTree = "<group>"; };
 		074F91541BD595A900498228 /* WasherService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WasherService.swift; path = Shared/WasherService.swift; sourceTree = "<group>"; };
+		075416991BDACC5C00234807 /* WasheryInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WasheryInterfaceController.swift; sourceTree = "<group>"; };
 		07D24F671BD7EEFE0034920E /* Stops.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = Stops.json; path = Shared/Stops.json; sourceTree = "<group>"; };
 		07D24F6D1BD7F6270034920E /* StopsRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopsRowController.swift; sourceTree = "<group>"; };
 		07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StopDetailsInterfaceController.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				07D24F6D1BD7F6270034920E /* StopsRowController.swift */,
 				07D24F6F1BD7F9FB0034920E /* StopDetailsInterfaceController.swift */,
 				07D24F711BD802DC0034920E /* StopDetailsRowController.swift */,
+				075416991BDACC5C00234807 /* WasheryInterfaceController.swift */,
 			);
 			path = "Watch Extension";
 			sourceTree = "<group>";
@@ -478,6 +481,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				07D24F721BD802DC0034920E /* StopDetailsRowController.swift in Sources */,
+				0754169A1BDACC5C00234807 /* WasheryInterfaceController.swift in Sources */,
 				074F91361BD57E9900498228 /* ExtensionDelegate.swift in Sources */,
 				07F618141BD81F2F000E5583 /* StopDetails.swift in Sources */,
 				074F91341BD57E9900498228 /* StopsInterfaceController.swift in Sources */,

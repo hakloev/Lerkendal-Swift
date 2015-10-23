@@ -1,10 +1,45 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8191" systemVersion="15B38b" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="lGv-9d-lF8">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b2b-ZO-hHO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8092"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9019"/>
     </dependencies>
     <scenes>
+        <!--Washery-->
+        <scene sceneID="jNg-c9-HAd">
+            <objects>
+                <controller identifier="WasheryStatus" title="Washery" id="b2b-ZO-hHO" customClass="WasheryInterfaceController" customModule="Watch_Extension">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="1DL-bQ-jVH">
+                            <items>
+                                <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" id="fFt-XK-FLn">
+                                    <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" type="boldSystem" pointSize="80"/>
+                                </label>
+                                <label alignment="center" verticalAlignment="bottom" text="available" textAlignment="center" baselineAdjustment="alignCenters" id="FFp-wM-nVF">
+                                    <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                    <menu key="menu" id="JcJ-HQ-wHF">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="U1N-O7-1iU">
+                                <connections>
+                                    <action selector="refreshWasherStatus" destination="b2b-ZO-hHO" id="px1-ao-aNr"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="availableWashers" destination="fFt-XK-FLn" id="b8w-I5-pas"/>
+                        <segue destination="lGv-9d-lF8" kind="relationship" relationship="nextPage" id="sNJ-rg-Vwo"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="201"/>
+        </scene>
         <!--Stops-->
         <scene sceneID="okF-IB-dkA">
             <objects>
@@ -13,16 +48,17 @@
                         <table alignment="left" id="CYE-7C-j5N">
                             <items>
                                 <tableRow identifier="StopsRow" id="dMu-zD-axc" customClass="StopsRowController" customModule="Watch_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="c6U-UE-RhA">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" spacing="0.0" id="c6U-UE-RhA">
                                         <items>
-                                            <label alignment="left" text="Lerkendal Stadion" textAlignment="left" id="CBB-QA-ZSz">
+                                            <label alignment="left" text="Gløshaugen Nord" textAlignment="left" id="CBB-QA-ZSz">
                                                 <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="font" type="boldSystem" pointSize="13"/>
+                                                <fontDescription key="font" type="system" weight="semibold" pointSize="14"/>
                                             </label>
                                             <label alignment="left" text="Til byen" id="fQr-R2-k5r">
-                                                <fontDescription key="font" style="UICTFontTextStyleSubhead"/>
+                                                <fontDescription key="font" type="system" weight="light" pointSize="12"/>
                                             </label>
                                         </items>
+                                        <edgeInsets key="margins" left="4" right="0.0" top="1" bottom="2"/>
                                     </group>
                                     <connections>
                                         <outlet property="stopDirectionLabel" destination="fQr-R2-k5r" id="ccg-z8-9M2"/>
@@ -37,7 +73,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-15" y="284"/>
+            <point key="canvasLocation" x="-16" y="530"/>
         </scene>
         <!--StopDetails-->
         <scene sceneID="hIq-dD-UyR">
@@ -47,28 +83,40 @@
                         <table alignment="left" id="wVA-Ww-B87">
                             <items>
                                 <tableRow identifier="StopDetailsRow" selectable="NO" id="9Rg-nx-jVh" customClass="StopDetailsRowController" customModule="Watch_Extension">
-                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="Bqu-v7-Aon">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Bqu-v7-Aon">
                                         <items>
-                                            <group alignment="left" id="Ofe-Ek-6zJ">
+                                            <group alignment="left" layout="vertical" id="Ofe-Ek-6zJ">
                                                 <items>
-                                                    <label alignment="left" verticalAlignment="center" text="5:" id="tiu-5l-25v">
-                                                        <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <fontDescription key="font" type="boldSystem" pointSize="16"/>
-                                                    </label>
-                                                    <label alignment="left" verticalAlignment="center" text="Munkegata M1" id="tRp-JO-oXc">
-                                                        <fontDescription key="font" type="system" weight="thin" pointSize="14"/>
-                                                    </label>
+                                                    <group alignment="left" id="VcV-e4-B7i">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="center" text="Munkegata M1" baselineAdjustment="alignCenters" id="tRp-JO-oXc">
+                                                                <fontDescription key="font" type="system" pointSize="14"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="1" bottom="0.0"/>
+                                                    </group>
+                                                    <group alignment="left" id="2Hw-ox-Lc1">
+                                                        <items>
+                                                            <label alignment="left" verticalAlignment="bottom" text="18:40" id="OEE-gb-lgY">
+                                                                <fontDescription key="font" type="system" weight="semibold" pointSize="15"/>
+                                                            </label>
+                                                            <label alignment="right" verticalAlignment="bottom" text="Realtime" id="xrq-BG-o3C">
+                                                                <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                <fontDescription key="font" type="system" pointSize="12"/>
+                                                            </label>
+                                                        </items>
+                                                        <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="1"/>
+                                                    </group>
                                                 </items>
                                             </group>
-                                            <group width="1" alignment="left" id="VcV-e4-B7i">
+                                            <group alignment="right" verticalAlignment="center" contentMode="left" id="1ld-E1-KvS">
                                                 <items>
-                                                    <label alignment="left" verticalAlignment="center" text="18:40" id="OEE-gb-lgY">
-                                                        <fontDescription key="font" type="boldSystem" pointSize="17"/>
-                                                    </label>
-                                                    <label alignment="right" verticalAlignment="center" text="Realtime" id="xrq-BG-o3C">
-                                                        <fontDescription key="font" type="system" pointSize="12"/>
+                                                    <label alignment="left" verticalAlignment="center" text="5" textAlignment="left" baselineAdjustment="alignCenters" id="tiu-5l-25v">
+                                                        <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <fontDescription key="font" type="boldSystem" pointSize="20"/>
                                                     </label>
                                                 </items>
+                                                <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                             </group>
                                         </items>
                                     </group>
@@ -87,7 +135,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="181" y="562"/>
+            <point key="canvasLocation" x="221" y="530"/>
         </scene>
     </scenes>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>

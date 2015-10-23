@@ -20,11 +20,13 @@ class StopsInterfaceController: WKInterfaceController {
         
         stopsTable.setNumberOfRows(busStops.count, withRowType: "StopsRow")
         
-        for index in 0..<stopsTable.numberOfRows {
-            if let controller = stopsTable.rowControllerAtIndex(index) as? StopsRowController {
-                controller.stop = busStops[index]
+        dispatch_async(dispatch_get_main_queue(), {
+            for index in 0..<self.stopsTable.numberOfRows {
+                if let controller = self.stopsTable.rowControllerAtIndex(index) as? StopsRowController {
+                    controller.stop = self.busStops[index]
+                }
             }
-        }
+        })
     }
 
     override func willActivate() {

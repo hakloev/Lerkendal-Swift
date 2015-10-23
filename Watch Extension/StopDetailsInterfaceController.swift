@@ -20,15 +20,18 @@ class StopDetailsInterfaceController: WKInterfaceController {
         setTitle(stop.name)
         
         busApiService.getBusDataFor(stop.locationId!) { (stopData: NSDictionary) -> Void in
-            if let departures: NSArray = stopData["next"] as? NSArray {
-                self.stopDetailsTable.setNumberOfRows(departures.count, withRowType: "StopDetailsRow")
-                
-                for index in 0..<self.stopDetailsTable.numberOfRows {
-                    if let controller = self.stopDetailsTable.rowControllerAtIndex(index) as? StopDetailsRowController {
-                        controller.stopDetails = StopDetails(json: departures[index] as! NSDictionary)
+            dispatch_async(dispatch_get_main_queue(), {
+                if let departures: NSArray = stopData["next"] as? NSArray {
+                    self.stopDetailsTable.setNumberOfRows(departures.count, withRowType: "StopDetailsRow")
+                    
+                    for index in 0..<self.stopDetailsTable.numberOfRows {
+                        if let controller = self.stopDetailsTable.rowControllerAtIndex(index) as? StopDetailsRowController {
+                            controller.stopDetails = StopDetails(json: departures[index] as! NSDictionary)
+                        }
                     }
                 }
-            }
+            })
+            
         }
         
         super.awakeWithContext(context)

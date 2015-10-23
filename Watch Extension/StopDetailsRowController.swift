@@ -20,7 +20,7 @@ class StopDetailsRowController: NSObject {
         
         didSet {
             if let stopDetails = stopDetails {
-                route.setText("\(stopDetails.route):")
+                route.setText("\(stopDetails.route)")
                 destination.setText(stopDetails.destination)
                 if stopDetails.realTime == 0 {
                     realTime.setText("")
