@@ -10,13 +10,13 @@ import Foundation
 
 class Stop {
     
-    var name: String?
-    var locationId: String?
-    var directionText: String?
+    var name: String!
+    var locationId: String!
+    var directionText: String!
     
     init(json: NSDictionary) {
-        self.name = json["name"] as? String
-        self.locationId = json["locationId"] as? String
+        self.name = json["name"] as! String
+        self.locationId = json["locationId"] as!String
         self.directionText = getDirection(self.locationId!)
     }
     

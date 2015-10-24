@@ -16,6 +16,7 @@ class BusService: NSObject {
     
     func getBusDataFor(busStop: String, onCompletion: (NSDictionary) -> Void) {
         let url: String = baseURL + busStop
+        print("Making API-request for: \(url)")
         makeHTTPGetRequest(url, onCompletion: { response, err in
             onCompletion(response)
         })

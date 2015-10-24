@@ -18,6 +18,7 @@ class WasherService: NSObject {
     
     func getWasherData(onCompletion: (NSDictionary) -> Void) {
         let url: String = baseURL + "available"
+        print("Making API-request for: \(url)")
         makeHTTPGetRequest(url, onCompletion: { response, err in
             onCompletion(response)
         })

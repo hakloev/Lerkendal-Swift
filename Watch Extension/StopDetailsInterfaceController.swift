@@ -18,7 +18,7 @@ class StopDetailsInterfaceController: WKInterfaceController {
     override func awakeWithContext(context: AnyObject?) {
         let stop: Stop = context as! Stop
         setTitle(stop.name)
-        
+        print("StopDetails awake with context: \(stop)")
         busApiService.getBusDataFor(stop.locationId!) { (stopData: NSDictionary) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
                 if let departures: NSArray = stopData["next"] as? NSArray {

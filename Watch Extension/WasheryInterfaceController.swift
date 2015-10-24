@@ -7,6 +7,7 @@
 //
 
 import WatchKit
+import ClockKit
 import Foundation
 
 class WasheryInterfaceController: WKInterfaceController {
@@ -37,6 +38,7 @@ class WasheryInterfaceController: WKInterfaceController {
     }
     
     private func refreshData() {
+        print("Refreshing Washery data")
         washerService.getWasherData { (washerStatus: NSDictionary) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
                 if let availableMachines: Int = washerStatus["availableWashers"] as? Int {
@@ -47,6 +49,7 @@ class WasheryInterfaceController: WKInterfaceController {
                 }
             })
         }
+        updateComplication()
     }
     
     func getTimeAsHourAndMinuteForDate(time: NSDate) -> String {
@@ -55,4 +58,14 @@ class WasheryInterfaceController: WKInterfaceController {
         let dateString = formatter.stringFromDate(time)
         return dateString
     }
+    
+    func updateComplication() {
+        print("Requesting refresh of complications due to update of data in WasheryInterfaceController")
+        let complicationServer: CLKComplicationServer = CLKComplicationServer.sharedInstance()
+        for complication in complicationServer.activeComplications {
+            complicationServer.reloadTimelineForComplication(complication)
+        }
+    }
+    
+    
 }

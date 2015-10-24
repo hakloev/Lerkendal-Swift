@@ -16,7 +16,7 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     // MARK: - Timeline Configuration
     
     func getSupportedTimeTravelDirectionsForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTimeTravelDirections) -> Void) {
-        handler([CLKComplicationTimeTravelDirections.None])
+        handler(CLKComplicationTimeTravelDirections.None)
     }
     
     func getTimelineStartDateForComplication(complication: CLKComplication, withHandler handler: (NSDate?) -> Void) {
@@ -35,7 +35,39 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getCurrentTimelineEntryForComplication(complication: CLKComplication, withHandler handler: ((CLKComplicationTimelineEntry?) -> Void)) {
         // Call the handler with the current timeline entry
-        handler(nil)
+        washerService.getWasherData { (data: NSDictionary) -> Void in
+            var template: CLKComplicationTemplate?
+            
+            switch complication.family {
+            case .ModularSmall:
+                print("Creating ModularSmall complication")
+                let modularSmallComplication = CLKComplicationTemplateModularSmallRingText()
+                
+                if let availableWashers: Int = data["availableWashers"] as? Int {
+                    let result: Float = Float(availableWashers) / Float(18)
+                    modularSmallComplication.fillFraction = result
+                    modularSmallComplication.textProvider = CLKSimpleTextProvider(text: "\(availableWashers)")
+                } else {
+                    modularSmallComplication.fillFraction = 0
+                    modularSmallComplication.textProvider = CLKSimpleTextProvider(text: "N/A")
+                }
+                modularSmallComplication.ringStyle = CLKComplicationRingStyle.Closed
+                template = modularSmallComplication
+            case .UtilitarianLarge:
+                print("Creating UtilitarianLarge complication")
+                template = nil
+            default:
+                print("Unknown complication type acessed: \(complication.family)")
+            }
+            
+            
+            if (template != nil) {
+                let timelineEntry = CLKComplicationTimelineEntry(date: NSDate(), complicationTemplate: template!)
+                handler(timelineEntry)
+            } else {
+                handler(nil)
+            }
+        }
     }
     
     func getTimelineEntriesForComplication(complication: CLKComplication, beforeDate date: NSDate, limit: Int, withHandler handler: (([CLKComplicationTimelineEntry]?) -> Void)) {
@@ -59,7 +91,26 @@ class ComplicationController: NSObject, CLKComplicationDataSource {
     
     func getPlaceholderTemplateForComplication(complication: CLKComplication, withHandler handler: (CLKComplicationTemplate?) -> Void) {
         // This method will be called once per supported complication, and the results will be cached
-        handler(nil)
+        var template: CLKComplicationTemplate?
+        
+        switch complication.family {
+        case .ModularSmall:
+            let modularSmallTemplate = CLKComplicationTemplateModularSmallRingText()
+            modularSmallTemplate.textProvider = CLKSimpleTextProvider(text: "VM", shortText: "VM")
+            modularSmallTemplate.fillFraction = 0.75
+            modularSmallTemplate.ringStyle = CLKComplicationRingStyle.Closed
+            template = modularSmallTemplate
+        case .UtilitarianLarge:
+            // ADD THIS
+            template = nil
+        default:
+            print("Unknown complication type acessed: \(complication.family)")
+            template = nil
+        }
+    
+        handler(template)
     }
+    
+    // MARK: - Complication data generator
     
 }

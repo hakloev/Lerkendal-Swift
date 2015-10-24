@@ -17,6 +17,7 @@ class StopsRowController: NSObject {
     var stop: Stop? {
     
         didSet {
+            print("Populating StopsRowController with \(stop!.name)")
             if let stop = stop {
                 stopNameLabel.setText(stop.name)
                 stopDirectionLabel.setText(stop.directionText)

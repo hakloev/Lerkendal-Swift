@@ -19,6 +19,7 @@ class StopDetailsRowController: NSObject {
     var stopDetails: StopDetails? {
         
         didSet {
+            print("Populating StopDetailsRowController with \(stopDetails?.route) to \(stopDetails?.destination)")
             if let stopDetails = stopDetails {
                 route.setText("\(stopDetails.route)")
                 destination.setText(stopDetails.destination)
