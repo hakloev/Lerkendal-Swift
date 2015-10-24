@@ -9,10 +9,10 @@
 import WatchKit
 import Foundation
 
-
 class WasheryInterfaceController: WKInterfaceController {
     
     @IBOutlet var availableWashers: WKInterfaceLabel!
+    @IBOutlet var updatedLabel: WKInterfaceLabel!
     
     @IBAction func refreshWasherStatus() {
         refreshData()
@@ -39,10 +39,20 @@ class WasheryInterfaceController: WKInterfaceController {
     private func refreshData() {
         washerService.getWasherData { (washerStatus: NSDictionary) -> Void in
             dispatch_async(dispatch_get_main_queue(), {
-                if let availableMachines: String = washerStatus["availableWashers"] as? String {
-                    self.availableWashers.setText(availableMachines)
+                if let availableMachines: Int = washerStatus["availableWashers"] as? Int {
+                    self.availableWashers.setText("\(availableMachines)")
+                
+                    let now = NSDate()
+                    self.updatedLabel.setText("\(self.getTimeAsHourAndMinuteForDate(now))")
                 }
             })
         }
+    }
+    
+    func getTimeAsHourAndMinuteForDate(time: NSDate) -> String {
+        let formatter = NSDateFormatter()
+        formatter.dateFormat = "HH:mm"
+        let dateString = formatter.stringFromDate(time)
+        return dateString
     }
 }

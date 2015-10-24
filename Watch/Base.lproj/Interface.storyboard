@@ -10,15 +10,25 @@
             <objects>
                 <controller identifier="WasheryStatus" title="Washery" id="b2b-ZO-hHO" customClass="WasheryInterfaceController" customModule="Watch_Extension">
                     <items>
-                        <group width="1" alignment="left" layout="vertical" id="1DL-bQ-jVH">
+                        <group width="1" alignment="left" verticalAlignment="center" layout="vertical" id="1DL-bQ-jVH">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="0" textAlignment="center" baselineAdjustment="alignCenters" id="fFt-XK-FLn">
+                                <label alignment="center" text="0" textAlignment="center" id="fFt-XK-FLn">
                                     <color key="textColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.20784313730000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" type="boldSystem" pointSize="80"/>
                                 </label>
                                 <label alignment="center" verticalAlignment="bottom" text="available" textAlignment="center" baselineAdjustment="alignCenters" id="FFp-wM-nVF">
                                     <color key="textColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" verticalAlignment="bottom" id="p97-2v-OuZ">
+                            <items>
+                                <label alignment="center" text="Updated:" id="T1k-b0-9fw">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
+                                </label>
+                                <label alignment="center" text="Never" id="7Nz-hU-5qk">
+                                    <fontDescription key="font" style="UICTFontTextStyleFootnote"/>
                                 </label>
                             </items>
                         </group>
@@ -34,6 +44,7 @@
                     </menu>
                     <connections>
                         <outlet property="availableWashers" destination="fFt-XK-FLn" id="b8w-I5-pas"/>
+                        <outlet property="updatedLabel" destination="7Nz-hU-5qk" id="uql-9l-IwY"/>
                         <segue destination="lGv-9d-lF8" kind="relationship" relationship="nextPage" id="sNJ-rg-Vwo"/>
                     </connections>
                 </controller>
